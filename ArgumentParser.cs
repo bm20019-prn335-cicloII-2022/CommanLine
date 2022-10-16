@@ -7,12 +7,14 @@ public class ArgumentParser
     private List<string> _nameShort = new List<string>();
     private List<string> _Descripcion = new List<string>();
     private List<Tipos> _tiposList = new List<Tipos>();
-    private Dictionary<string, object> dicionario = new Dictionary<string, object>();
-    private string[] Arguments = Environment.GetCommandLineArgs();
-    private int getLengthArguments = 0;
+    private List<string> examples = new List<string>();
     private string Descripcion;
     private string Title;
     private string Version;
+    private string titleExample = "Examples:";
+    private Dictionary<string, object> dicionario = new Dictionary<string, object>();
+    private string[] Arguments = Environment.GetCommandLineArgs();
+    private int getLengthArguments = 0;
 
     #region Constructores
     public ArgumentParser()
@@ -308,13 +310,16 @@ public class ArgumentParser
         return _nameArgument;
     }
     #endregion
-
-    private List<string> examples = new List<string>();
+    
     public void AddExamples(List<string> examples)
     {
         this.examples = examples;
     }
-    
+    public void AddExamples(string title,List<string> examples)
+    {
+        this.examples = examples;
+        this.titleExample = title;
+    }
     private void ayuda()
     {
         string print = $"{Title} -- Version: {Version}\n\nDescripcion:\n{Descripcion}\n\n";
@@ -327,7 +332,7 @@ public class ArgumentParser
         Console.WriteLine(print+commands);
         if (examples.Count > 0)
         {
-            Console.WriteLine("Ejemplos:");
+            Console.WriteLine("\n{0}",titleExample);
             examples.ForEach(e => Console.WriteLine(e));
         }
     }
