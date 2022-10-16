@@ -308,6 +308,12 @@ public class ArgumentParser
         return _nameArgument;
     }
     #endregion
+
+    private List<string> examples = new List<string>();
+    public void AddExamples(List<string> examples)
+    {
+        this.examples = examples;
+    }
     
     private void ayuda()
     {
@@ -319,6 +325,11 @@ public class ArgumentParser
         }
         commands += $"\n--help, -h\tImprime la ayuda del programa";
         Console.WriteLine(print+commands);
+        if (examples.Count > 0)
+        {
+            Console.WriteLine("Ejemplos:");
+            examples.ForEach(e => Console.WriteLine(e));
+        }
     }
     
     private static FileVersionInfo InfoVersion()
