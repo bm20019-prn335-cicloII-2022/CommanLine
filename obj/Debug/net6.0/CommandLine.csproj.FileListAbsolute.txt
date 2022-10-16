@@ -1,0 +1,12 @@
+/home/adalberto/RiderProjects/CommandLine/bin/Debug/net6.0/CommandLine.deps.json
+/home/adalberto/RiderProjects/CommandLine/bin/Debug/net6.0/CommandLine.dll
+/home/adalberto/RiderProjects/CommandLine/bin/Debug/net6.0/CommandLine.pdb
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.csproj.AssemblyReference.cache
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.GeneratedMSBuildEditorConfig.editorconfig
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.AssemblyInfoInputs.cache
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.AssemblyInfo.cs
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.csproj.CoreCompileInputs.cache
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.dll
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/refint/CommandLine.dll
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/CommandLine.pdb
+/home/adalberto/RiderProjects/CommandLine/obj/Debug/net6.0/ref/CommandLine.dll
